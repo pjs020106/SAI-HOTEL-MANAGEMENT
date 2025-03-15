@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SAI AVENUE: ROOM MANAGEMENT CELL</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #fff;
+      background-color: #E89E00;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+    }
+
+    th, td {
+      border: 1px solid #999;
+      padding: 12px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f2a500;
+      color: #000;
+    }
+
+    img {
+      width: 250px;
+      height: 150px;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .footer-img {
+      margin-top: 40px;
+      width: 100%;
+      height: auto;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .nav-buttons a {
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #E89E00;
+      color: #fff;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+
+    .nav-buttons a:hover {
+      background-color: #d17f00;
+    }
+  </style>
+</head>
+<body>
+
+<div class="nav-buttons">
+  <a href="manager1.html">Back</a>
+  <a href="hms.html">Home</a>
+</div>
+
+<h1>SAI AVENUE: ROOM MANAGEMENT CELL</h1>
+
+<table>
+  <tr>
+    <th>S.No.</th>
+    <th>Room Type</th>
+    <th>Pictorial View</th>
+    <th>Booking Status</th>
+    <th>Total No. of Rooms</th>
+    <th>Room ID</th>
+    <th>Available</th>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td>Single Bed</td>
+    <td><img src="bed1s.jpg" alt="Single Bed"></td>
+    <td>
+      <input type="checkbox"> 10:00 - 12:00<br>
+      <input type="checkbox" checked> 11:00 - 15:00<br>
+      <input type="checkbox"> 16:00 - 23:00<br>
+      <input type="checkbox"> Full Day
+    </td>
+    <td>25</td>
+    <td>SB11</td>
+    <td>
+      <input type="radio" name="r1" checked> Yes<br>
+      <input type="radio" name="r1"> No
+    </td>
+  </tr>
+
+  <tr>
+    <td>2</td>
+    <td>Single Bed Premium</td>
+    <td><img src="bed1.jpg" alt="Single Bed Premium"></td>
+    <td>
+      <input type="checkbox"> 10:00 - 12:00<br>
+      <input type="checkbox"> 11:00 - 15:00<br>
+      <input type="checkbox"> 16:00 - 23:00<br>
+      <input type="checkbox" checked> Full Day
+    </td>
+    <td>40</td>
+    <td>SBP1</td>
+    <td>
+      <input type="radio" name="r2" checked> Yes<br>
+      <input type="radio" name="r2"> No
+    </td>
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td>Double Bed</td>
+    <td><img src="bed2s.jpg" alt="Double Bed"></td>
+    <td>
+      <input type="checkbox"> 10:00 - 12:00<br>
+      <input type="checkbox"> 11:00 - 15:00<br>
+      <input type="checkbox"> 16:00 - 23:00<br>
+      <input type="checkbox" checked> Full Day
+    </td>
+    <td>36</td>
+    <td>DB22</td>
+    <td>
+      <input type="radio" name="r3" checked> Yes<br>
+      <input type="radio" name="r3"> No
+    </td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td>Double Bed Attached</td>
+    <td><img src="bed2.jpg" alt="Double Bed Attached"></td>
+    <td>
+      <input type="checkbox"> 10:00 - 12:00<br>
+      <input type="checkbox"> 11:00 - 15:00<br>
+      <input type="checkbox"> 16:00 - 23:00<br>
+      <input type="checkbox" checked> Full Day
+    </td>
+    <td>55</td>
+    <td>DBA2</td>
+    <td>
+      <input type="radio" name="r4" checked> Yes<br>
+      <input type="radio" name="r4"> No
+    </td>
+  </tr>
+
+  <tr>
+    <td>5</td>
+    <td>Double Bed Premium</td>
+    <td><img src="1.jpg" alt="Double Bed Premium"></td>
+    <td>
+      <input type="checkbox"> 10:00 - 12:00<br>
+      <input type="checkbox"> 11:00 - 15:00<br>
+      <input type="checkbox"> 16:00 - 23:00<br>
+      <input type="checkbox" checked> Full Day
+    </td>
+    <td>42</td>
+    <td>DBAP</td>
+    <td>
+      <input type="radio" name="r5" checked> Yes<br>
+      <input type="radio" name="r5"> No
+    </td>
+  </tr>
+
+  <tr>
+    <td>6</td>
+    <td>Single Bed Classic</td>
+    <td><img src="g3.jpg" alt="Single Bed Classic"></td>
+    <td>
+      <input type="checkbox" checked> 10:00 - 12:00<br>
+      <input type="checkbox"> 11:00 - 15:00<br>
+      <input type="checkbox"> 16:00 - 23:00<br>
+      <input type="checkbox"> Full Day
+    </td>
+    <td>35</td>
+    <td>KKOO</td>
+    <td>
+      <input type="radio" name="r6" checked> Yes<br>
+      <input type="radio" name="r6"> No
+    </td>
+  </tr>
+
+  <tr>
+    <td>7</td>
+    <td>Meeting Hall</td>
+    <td><img src="g4.jpg" alt="Meeting Hall"></td>
+    <td>
+      <input type="checkbox" checked> 10:00 - 12:00<br>
+      <input type="checkbox"> 11:00 - 15:00<br>
+      <input type="checkbox"> 16:00 - 23:00<br>
+      <input type="checkbox"> Full Day
+    </td>
+    <td>6</td>
+    <td>GGHH</td>
+    <td>
+      <input type="radio" name="r7" checked> Yes<br>
+      <input type="radio" name="r7"> No
+    </td>
+  </tr>
+
+  <tr>
+    <td>8</td>
+    <td>Wedding Hall</td>
+    <td><img src="g5.jpg" alt="Wedding Hall"></td>
+    <td>
+      <input type="checkbox" checked> 10:00 - 12:00<br>
+      <input type="checkbox"> 11:00 - 15:00<br>
+      <input type="checkbox"> 16:00 - 23:00<br>
+      <input type="checkbox"> Full Day
+    </td>
+    <td>10</td>
+    <td>XXDD</td>
+    <td>
+      <input type="radio" name="r8" checked> Yes<br>
+      <input type="radio" name="r8"> No
+    </td>
+  </tr>
+
+  <tr>
+    <td>9</td>
+    <td>Party Hall</td>
+    <td><img src="g2.jpg" alt="Party Hall"></td>
+    <td>
+      <input type="checkbox" checked> 10:00 - 12:00<br>
+      <input type="checkbox"> 11:00 - 15:00<br>
+      <input type="checkbox"> 16:00 - 23:00<br>
+      <input type="checkbox"> Full Day
+    </td>
+    <td>10</td>
+    <td>CCDD</td>
+    <td>
+      <input type="radio" name="r9" checked> Yes<br>
+      <input type="radio" name="r9"> No
+    </td>
+  </tr>
+
+  <tr>
+    <td>10</td>
+    <td>Sight-Seeing</td>
+    <td><img src="g1.jpg" alt="Sight-Seeing"></td>
+    <td>
+      <input type="checkbox" checked> 10:00 - 12:00<br>
+      <input type="checkbox"> 11:00 - 15:00<br>
+      <input type="checkbox"> 16:00 - 23:00<br>
+      <input type="checkbox"> Full Day
+    </td>
+    <td>8</td>
+    <td>AABB</td>
+    <td>
+      <input type="radio" name="r10" checked> Yes<br>
+      <input type="radio" name="r10"> No
+    </td>
+  </tr>
+</table>
+
+<br><br>
+<img src="sai.png" class="footer-img" alt="Footer Image">
+
+</body>
+</html>
