@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SAI AVENUE: CONTACT DIRECTORY</title>
+  <script src="directory.js"></script>
+  <style>
+    body {
+      background-image: url('water.png');
+      font-family: Arial, sans-serif;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    ul li {
+      float: left;
+      width: 168px;
+      height: 40px;
+      background-color: #E89E00;
+      line-height: 40px;
+      text-align: center;
+      font-size: 20px;
+      margin-right: 2px;
+      border-radius: 20px;
+      border: 4px solid gray;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #000;
+      display: block;
+    }
+
+    ul li a:hover {
+      background-color: #0EA101;
+      border-radius: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      font-weight: bold;
+      background-color: #E89E00;
+      padding: 10px;
+      margin-bottom: 40px;
+    }
+
+    .directory-container {
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .directory-row {
+      margin-bottom: 20px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .directory-row input[type="submit"] {
+      border: 2px solid black;
+      outline: none;
+      height: 40px;
+      background: #E89E00;
+      color: #fff;
+      font-size: 18px;
+      border-radius: 20px;
+      padding: 0 20px;
+      margin-left: 20px;
+    }
+
+    .directory-row input[type="submit"]:hover {
+      background: #65F63D;
+      color: #000;
+      cursor: pointer;
+    }
+
+    .footer-img {
+      display: block;
+      margin: 50px auto;
+    }
+  </style>
+</head>
+
+<body>
+
+  <ul>
+    <li><a href="hms.html">HOME</a></li>
+  </ul>
+
+  <h1>SAI AVENUE: CONTACT DIRECTORY</h1>
+
+  <div class="directory-container">
+    <div class="directory-row">
+      RECEPTION 1: 88888-66666
+      <input type="submit" onclick="callNow('Reception 1')" value="CALL NOW">
+    </div>
+    <div class="directory-row">
+      RECEPTION 2: 88888-66777
+      <input type="submit" onclick="callNow('Reception 2')" value="CALL NOW">
+    </div>
+    <div class="directory-row">
+      LAUNDRY: 44444-55555
+      <input type="submit" onclick="callNow('Laundry')" value="CALL NOW">
+    </div>
+    <div class="directory-row">
+      ROOM SERVICE 1: 66666-54545
+      <input type="submit" onclick="callNow('Room Service 1')" value="CALL NOW">
+    </div>
+    <div class="directory-row">
+      ROOM SERVICE 2: 66666-54554
+      <input type="submit" onclick="callNow('Room Service 2')" value="CALL NOW">
+    </div>
+  </div>
+
+  <img src="sai.png" height="245" width="1280" alt="Footer" class="footer-img">
+
+  <script>
+    function callNow(service) {
+      alert("Calling " + service + "...");
+      // Add real call action or VOIP integration here
+    }
+  </script>
+
+</body>
+</html>

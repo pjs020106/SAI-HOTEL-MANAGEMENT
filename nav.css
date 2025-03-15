@@ -1,0 +1,196 @@
+body {
+    font-family: Arial;
+    color: black;
+  }
+  
+  /* Banner/hero image with hover effect */
+  .red {
+    width: 1280px;
+    height: 245px;
+    position: absolute;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  img {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    transition: all 1s ease-in;
+  }
+  
+  span {
+    position: absolute;
+    color: #fff;
+    left: 30px;
+    bottom: 50px;
+    right: 0px;
+    margin: 2px;
+    font-family: sans-serif;
+    padding: 3px 0px;
+    font-size: 50px;
+    transform: translateY(50px);
+    opacity: 0.1;
+    transition: all 1s ease-in;
+    font-weight: 500; /* Fixed: 'px' removed from font-weight */
+  }
+  
+  .red:hover img {
+    transform: scale(1.4);
+    filter: brightness(0.2);
+  }
+  
+  .red:hover span {
+    transform: translateY(-15px);
+    font-size: 38px;
+    opacity: 1;
+  }
+  
+  /* Navigation */
+  ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+  
+  ul li {
+    float: left;
+    width: 168px;
+    height: 40px;
+    background-color: #E89E00;
+    opacity: 1; /* Fixed: added missing value */
+    line-height: 40px;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 4px;
+    border-radius: 20px;
+    border: 3px solid gray;
+    position: relative;
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+  }
+  
+  ul li a:hover {
+    background-color: #0EA101;
+    border-radius: 20px;
+  }
+  
+  ul li ul li,
+  ul li ul li ul li {
+    display: none;
+    font-size: 15px;
+  }
+  
+  ul li ul li ul li {
+    margin-left: 180px;
+    font-size: 12px;
+  }
+  
+  ul li:hover ul li {
+    display: block;
+  }
+  
+  /* Cards with overlays */
+  .alpha,
+  .beta,
+  .game {
+    width: 320px;
+    height: 240px;
+    position: relative;
+    cursor: pointer;
+    z-index: -1;
+  }
+  
+  .alpha:hover .alpha-m,
+  .beta:hover .beta-n,
+  .game:hover .game-g {
+    width: 320px;
+  }
+  
+  #e, #f, #x {
+    margin-top: 40px;
+    display: block;
+    width: 320px;
+    height: 240px;
+    border-radius: 10px;
+  }
+  
+  #e {
+    margin-top: 55px;
+  }
+  
+  .alpha-m,
+  .beta-n,
+  .game-g {
+    width: 0px;
+    height: 240px;
+    opacity: 0.5;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.7s ease;
+    border-radius: 10px;
+  }
+  
+  .alpha-m {
+    background: #CBE40F;
+    top: 355px;
+  }
+  
+  .beta-n,
+  .game-g {
+    background: #E89E00;
+  }
+  
+  .beta-n {
+    top: 635px;
+  }
+  
+  .game-g {
+    top: 915px;
+  }
+  
+  .alpha-m p1,
+  .beta-n p2,
+  .game-g p3 {
+    color: black;
+    font-size: 50px;
+    border: 6px solid black;
+    padding: 10px 30px;
+    opacity: 1;
+  }
+  
+  /* Responsive images or banners */
+  #r1 {
+    margin-top: 40px;
+    display: block;
+    width: 1275px;
+    height: 240px;
+    border-radius: 10px;
+  }
+  
+  #f1,
+  #b1 {
+    width: 850px;
+    position: absolute;
+    left: 390px;
+    z-index: -1;
+  }
+  
+  #f1 {
+    height: 380px;
+    top: 360px;
+  }
+  
+  #b1 {
+    height: 360px;
+    top: 795px;
+    cursor: pointer;
+  }
+  

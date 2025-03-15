@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SAI AVENUE: GAMING</title>
+  <style>
+    body {
+      background-image: url('.PNG');
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 10px;
+    }
+
+    ul li {
+      float: left;
+      width: 168px;
+      height: 40px;
+      background-color: #E89E00;
+      line-height: 40px;
+      text-align: center;
+      font-size: 20px;
+      margin-right: 2px;
+      border-radius: 20px;
+      border: 4px solid gray;
+    }
+
+    ul li a {
+      text-decoration: none;
+      color: #000000;
+      display: block;
+    }
+
+    ul li a:hover {
+      background-color: #0EA101;
+      border-radius: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      background-color: #E89E00;
+      color: black;
+      padding: 10px;
+    }
+
+    .form-container {
+      width: 500px;
+      margin: 50px auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 30px;
+      border-radius: 20px;
+      font-size: 18px;
+    }
+
+    .form-container input, .form-container select {
+      width: 100%;
+      margin-bottom: 20px;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .pay-button {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .pay-button a {
+      background-color: #E89E00;
+      color: black;
+      padding: 10px 30px;
+      font-size: 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      border: 4px solid gray;
+    }
+
+    .pay-button a:hover {
+      background-color: #0EA101;
+      color: white;
+    }
+
+    .footer-img {
+      display: block;
+      margin: 50px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li><a href="hms.html">HOME</a></li>
+  </ul>
+
+  <h1>SAI AVENUE: GAMING</h1>
+
+  <div class="form-container">
+    <form onsubmit="return validateForm()">
+      <label><b>Full Name:</b></label>
+      <input type="text" onfocus="highlight(this)" onblur="unhighlight(this)" placeholder="Enter your full name">
+
+      <label><b>Phone:</b></label>
+      <input type="text" onfocus="highlight(this)" placeholder="+91XXXXXXXXXX">
+
+      <label><b>Select Game:</b></label>
+      <select>
+        <option value="BADMINTON">BADMINTON</option>
+        <option value="POOL">POOL</option>
+        <option value="TABLE TENNIS">TABLE TENNIS</option>
+        <option value="CHESS">CHESS</option>
+        <option value="PLAYWAY">PLAYWAY</option>
+        <option value="VOLLEY BALL">VOLLEY BALL</option>
+        <option value="CARROMS">CARROMS</option>
+        <option value="LUDO">LUDO</option>
+
+      </select>
+
+      <label><b>Date of Booking:</b></label>
+      <input type="text" placeholder="DD/MM/YYYY">
+
+      <label><b>Timing (in hours):</b></label>
+      <input type="text" placeholder="e.g. 2">
+
+      <label><b>Select Payment Option:</b></label>
+      <select>
+        <option value="CREDIT CARD">CREDIT CARD</option>
+        <option value="DEBIT CARD">DEBIT CARD</option>
+        <option value="NEFT">NEFT</option>
+        <option value="NET BANKING">NET BANKING</option>
+      </select>
+
+      <label><b>Select UPI PAYMENTS:</b></label>
+      <select>
+        <option value="payTM">payTM</option>
+        <option value="PHONE PAY">PHONE PAY</option>
+        <option VALUE="GOOGLE PAY">GOOGLE PAY</option>"
+      </select>
+    </form>
+  </div>
+
+  <div class="pay-button">
+    <a href="#">PAYMENT</a>
+  </div>
+
+  <img src="sai.png" height="245" width="1280" class="footer-img" alt="Footer">
+
+  <script>
+    function highlight(x) {
+      x.style.background = "#E89E00";
+    }
+
+    function unhighlight(x) {
+      x.style.background = "white";
+    }
+
+    function validateForm() {
+      // Placeholder for future validation logic
+      return true;
+    }
+  </script>
+
+</body>
+</html>

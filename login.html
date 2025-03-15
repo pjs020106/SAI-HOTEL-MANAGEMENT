@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>SAI AVENUE: LOGIN</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <ul>
+    <li><a href="hms.html">HOME</a></li>
+  </ul>
+
+  <div class="loginbox">
+    <img src="log.png" class="log" alt="Logo">
+    <h1>SAI AVENUE : GUEST LOGIN</h1>
+
+    <form onsubmit="return login()">
+      <p>USERNAME / ID</p>
+      <input type="text" id="username" name="username" placeholder="Enter your username">
+
+      <p>PASSWORD</p>
+      <input type="password" id="password" name="password" placeholder="Enter your password">
+
+      <input type="submit" value="LOGIN">
+
+      <br><br>
+      <a href="forget.html">Forgot password?</a><br>
+      <a href="new.html">Create a new account</a>
+    </form>
+  </div>
+
+  <script>
+    function login() {
+      var a = document.getElementById('username').value;
+      var b = document.getElementById('password').value;
+
+      if (a === "" || b === "") {
+        alert("!!! Please fill in all the details !!!");
+        return false;
+      }
+
+      const managerAccounts = ["SAVENUE", "RJGA", "ABVE", "ABZR", "AMNM", "YASW"];
+      if (managerAccounts.includes(a) && b === "12345") {
+        window.open("manager.html");
+        return false;
+      } else if (a === "GAVENUE" && b === "12345") {
+        window.open("gservice.html");
+        return false;
+      } else {
+        alert("Wrong ID/password");
+        return false;
+      }
+    }
+  </script>
+
+</body>
+</html>
